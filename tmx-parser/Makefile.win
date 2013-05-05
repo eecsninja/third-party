@@ -1,0 +1,129 @@
+# Project: tmx2dat
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = TmxParser/zlib/adler32.o TmxParser/zlib/compress.o TmxParser/zlib/crc32.o TmxParser/zlib/deflate.o TmxParser/zlib/gzclose.o TmxParser/zlib/gzlib.o TmxParser/zlib/gzread.o TmxParser/zlib/gzwrite.o TmxParser/zlib/infback.o TmxParser/zlib/inffast.o TmxParser/zlib/inflate.o TmxParser/zlib/inftrees.o TmxParser/zlib/trees.o TmxParser/zlib/uncompr.o TmxParser/zlib/zutil.o TmxParser/tinyxml/tinystr.o TmxParser/tinyxml/tinyxml.o TmxParser/tinyxml/tinyxmlerror.o TmxParser/tinyxml/tinyxmlparser.o TmxParser/base64/base64.o TmxParser/TmxEllipse.o TmxParser/TmxImage.o TmxParser/TmxImageLayer.o TmxParser/TmxLayer.o TmxParser/TmxMap.o TmxParser/TmxObject.o TmxParser/TmxObjectGroup.o TmxParser/TmxPolygon.o TmxParser/TmxPolyline.o TmxParser/TmxPropertySet.o TmxParser/TmxTile.o TmxParser/TmxTileset.o TmxParser/TmxUtil.o ../../utils/tmx2dat.o $(RES)
+LINKOBJ  = TmxParser/zlib/adler32.o TmxParser/zlib/compress.o TmxParser/zlib/crc32.o TmxParser/zlib/deflate.o TmxParser/zlib/gzclose.o TmxParser/zlib/gzlib.o TmxParser/zlib/gzread.o TmxParser/zlib/gzwrite.o TmxParser/zlib/infback.o TmxParser/zlib/inffast.o TmxParser/zlib/inflate.o TmxParser/zlib/inftrees.o TmxParser/zlib/trees.o TmxParser/zlib/uncompr.o TmxParser/zlib/zutil.o TmxParser/tinyxml/tinystr.o TmxParser/tinyxml/tinyxml.o TmxParser/tinyxml/tinyxmlerror.o TmxParser/tinyxml/tinyxmlparser.o TmxParser/base64/base64.o TmxParser/TmxEllipse.o TmxParser/TmxImage.o TmxParser/TmxImageLayer.o TmxParser/TmxLayer.o TmxParser/TmxMap.o TmxParser/TmxObject.o TmxParser/TmxObjectGroup.o TmxParser/TmxPolygon.o TmxParser/TmxPolyline.o TmxParser/TmxPropertySet.o TmxParser/TmxTile.o TmxParser/TmxTileset.o TmxParser/TmxUtil.o ../../utils/tmx2dat.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  
+INCS =  -I"C:/Dev-Cpp/include"  -I"TmxParser/zlib"  -I"TmxParser/"  -I"TmxParser/tinyxml"  -I"TmxParser/"  -I"." 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include"  -I"TmxParser/zlib"  -I"TmxParser/"  -I"TmxParser/tinyxml"  -I"TmxParser/"  -I"." 
+BIN  = tmx2dat.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS) -std=gnu89  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before tmx2dat.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "tmx2dat.exe" $(LIBS)
+
+TmxParser/zlib/adler32.o: TmxParser/zlib/adler32.c
+	$(CC) -c TmxParser/zlib/adler32.c -o TmxParser/zlib/adler32.o $(CFLAGS)
+
+TmxParser/zlib/compress.o: TmxParser/zlib/compress.c
+	$(CC) -c TmxParser/zlib/compress.c -o TmxParser/zlib/compress.o $(CFLAGS)
+
+TmxParser/zlib/crc32.o: TmxParser/zlib/crc32.c
+	$(CC) -c TmxParser/zlib/crc32.c -o TmxParser/zlib/crc32.o $(CFLAGS)
+
+TmxParser/zlib/deflate.o: TmxParser/zlib/deflate.c
+	$(CC) -c TmxParser/zlib/deflate.c -o TmxParser/zlib/deflate.o $(CFLAGS)
+
+TmxParser/zlib/gzclose.o: TmxParser/zlib/gzclose.c
+	$(CC) -c TmxParser/zlib/gzclose.c -o TmxParser/zlib/gzclose.o $(CFLAGS)
+
+TmxParser/zlib/gzlib.o: TmxParser/zlib/gzlib.c
+	$(CC) -c TmxParser/zlib/gzlib.c -o TmxParser/zlib/gzlib.o $(CFLAGS)
+
+TmxParser/zlib/gzread.o: TmxParser/zlib/gzread.c
+	$(CC) -c TmxParser/zlib/gzread.c -o TmxParser/zlib/gzread.o $(CFLAGS)
+
+TmxParser/zlib/gzwrite.o: TmxParser/zlib/gzwrite.c
+	$(CC) -c TmxParser/zlib/gzwrite.c -o TmxParser/zlib/gzwrite.o $(CFLAGS)
+
+TmxParser/zlib/infback.o: TmxParser/zlib/infback.c
+	$(CC) -c TmxParser/zlib/infback.c -o TmxParser/zlib/infback.o $(CFLAGS)
+
+TmxParser/zlib/inffast.o: TmxParser/zlib/inffast.c
+	$(CC) -c TmxParser/zlib/inffast.c -o TmxParser/zlib/inffast.o $(CFLAGS)
+
+TmxParser/zlib/inflate.o: TmxParser/zlib/inflate.c
+	$(CC) -c TmxParser/zlib/inflate.c -o TmxParser/zlib/inflate.o $(CFLAGS)
+
+TmxParser/zlib/inftrees.o: TmxParser/zlib/inftrees.c
+	$(CC) -c TmxParser/zlib/inftrees.c -o TmxParser/zlib/inftrees.o $(CFLAGS)
+
+TmxParser/zlib/trees.o: TmxParser/zlib/trees.c
+	$(CC) -c TmxParser/zlib/trees.c -o TmxParser/zlib/trees.o $(CFLAGS)
+
+TmxParser/zlib/uncompr.o: TmxParser/zlib/uncompr.c
+	$(CC) -c TmxParser/zlib/uncompr.c -o TmxParser/zlib/uncompr.o $(CFLAGS)
+
+TmxParser/zlib/zutil.o: TmxParser/zlib/zutil.c
+	$(CC) -c TmxParser/zlib/zutil.c -o TmxParser/zlib/zutil.o $(CFLAGS)
+
+TmxParser/tinyxml/tinystr.o: TmxParser/tinyxml/tinystr.cpp
+	$(CC) -c TmxParser/tinyxml/tinystr.cpp -o TmxParser/tinyxml/tinystr.o $(CFLAGS)
+
+TmxParser/tinyxml/tinyxml.o: TmxParser/tinyxml/tinyxml.cpp
+	$(CC) -c TmxParser/tinyxml/tinyxml.cpp -o TmxParser/tinyxml/tinyxml.o $(CFLAGS)
+
+TmxParser/tinyxml/tinyxmlerror.o: TmxParser/tinyxml/tinyxmlerror.cpp
+	$(CC) -c TmxParser/tinyxml/tinyxmlerror.cpp -o TmxParser/tinyxml/tinyxmlerror.o $(CFLAGS)
+
+TmxParser/tinyxml/tinyxmlparser.o: TmxParser/tinyxml/tinyxmlparser.cpp
+	$(CC) -c TmxParser/tinyxml/tinyxmlparser.cpp -o TmxParser/tinyxml/tinyxmlparser.o $(CFLAGS)
+
+TmxParser/base64/base64.o: TmxParser/base64/base64.cpp
+	$(CC) -c TmxParser/base64/base64.cpp -o TmxParser/base64/base64.o $(CFLAGS)
+
+TmxParser/TmxEllipse.o: TmxParser/TmxEllipse.cpp
+	$(CC) -c TmxParser/TmxEllipse.cpp -o TmxParser/TmxEllipse.o $(CFLAGS)
+
+TmxParser/TmxImage.o: TmxParser/TmxImage.cpp
+	$(CC) -c TmxParser/TmxImage.cpp -o TmxParser/TmxImage.o $(CFLAGS)
+
+TmxParser/TmxImageLayer.o: TmxParser/TmxImageLayer.cpp
+	$(CC) -c TmxParser/TmxImageLayer.cpp -o TmxParser/TmxImageLayer.o $(CFLAGS)
+
+TmxParser/TmxLayer.o: TmxParser/TmxLayer.cpp
+	$(CC) -c TmxParser/TmxLayer.cpp -o TmxParser/TmxLayer.o $(CFLAGS)
+
+TmxParser/TmxMap.o: TmxParser/TmxMap.cpp
+	$(CC) -c TmxParser/TmxMap.cpp -o TmxParser/TmxMap.o $(CFLAGS)
+
+TmxParser/TmxObject.o: TmxParser/TmxObject.cpp
+	$(CC) -c TmxParser/TmxObject.cpp -o TmxParser/TmxObject.o $(CFLAGS)
+
+TmxParser/TmxObjectGroup.o: TmxParser/TmxObjectGroup.cpp
+	$(CC) -c TmxParser/TmxObjectGroup.cpp -o TmxParser/TmxObjectGroup.o $(CFLAGS)
+
+TmxParser/TmxPolygon.o: TmxParser/TmxPolygon.cpp
+	$(CC) -c TmxParser/TmxPolygon.cpp -o TmxParser/TmxPolygon.o $(CFLAGS)
+
+TmxParser/TmxPolyline.o: TmxParser/TmxPolyline.cpp
+	$(CC) -c TmxParser/TmxPolyline.cpp -o TmxParser/TmxPolyline.o $(CFLAGS)
+
+TmxParser/TmxPropertySet.o: TmxParser/TmxPropertySet.cpp
+	$(CC) -c TmxParser/TmxPropertySet.cpp -o TmxParser/TmxPropertySet.o $(CFLAGS)
+
+TmxParser/TmxTile.o: TmxParser/TmxTile.cpp
+	$(CC) -c TmxParser/TmxTile.cpp -o TmxParser/TmxTile.o $(CFLAGS)
+
+TmxParser/TmxTileset.o: TmxParser/TmxTileset.cpp
+	$(CC) -c TmxParser/TmxTileset.cpp -o TmxParser/TmxTileset.o $(CFLAGS)
+
+TmxParser/TmxUtil.o: TmxParser/TmxUtil.cpp
+	$(CC) -c TmxParser/TmxUtil.cpp -o TmxParser/TmxUtil.o $(CFLAGS)
+
+../../utils/tmx2dat.o: ../../utils/tmx2dat.cpp
+	$(CC) -c ../../utils/tmx2dat.cpp -o ../../utils/tmx2dat.o $(CFLAGS)
